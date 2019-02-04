@@ -1,0 +1,11 @@
+<div *ngIf = 'appStatus'> <h1>Hello {{appTitle}}</h1> </div>
+
+<ul>
+    <li *ngFor = 'let lt of appList'>
+        {{lt.ID}}
+    </li>
+</ul>
+
+
+<p>Dates: {{'Sakthi' | BirthDate: '06/07/1992'}}</p>
+<p>Dates: {{'Priya' | BirthDate: '08/25/1994'}}</p>

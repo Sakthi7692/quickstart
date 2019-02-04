@@ -1,0 +1,24 @@
+
+ <input [(ngModel)]="name" [value] = "name">
+ {{name}}
+
+ <div> 
+        The percentage is {{name | percent:'1.3-5'}}<br>  
+     </div> 
+
+<table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr *ngFor = 'let rec of iproducts'>
+                <td>{{rec.ProductID}}</td>
+                <td>{{rec.ProductName}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img [src]='cycle'/>
+
+    <product-form></product-form>
